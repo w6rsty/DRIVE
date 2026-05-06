@@ -1,0 +1,12 @@
+# Files in this list are NOT uploaded as static assets by Cloudflare wrangler.
+# Syntax is identical to .gitignore.
+
+.git/
+.gitattributes
+.gitignore
+.assetsignore
+wrangler.jsonc
+wrangler.toml
+.claude/
+node_modules/
+README.md
