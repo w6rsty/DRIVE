@@ -1,0 +1,13 @@
+# Unity WebGL build artifacts — keep as plain binaries (do NOT use Git LFS:
+# GitHub Pages does not resolve LFS pointers and would serve broken files).
+*.data binary
+*.wasm binary
+*.symbols.json binary
+*.bundle binary
+
+# Force LF for text/code so Windows checkouts don't break the served files.
+*.js   text eol=lf
+*.json text eol=lf
+*.html text eol=lf
+*.css  text eol=lf
+*.webmanifest text eol=lf
