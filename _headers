@@ -1,20 +1,26 @@
-# Tell the browser these files are pre-compressed with Brotli, so it
-# decompresses them on the fly. Required because Unity build was made
-# without "Decompression Fallback" — the loader expects the server to
-# set Content-Encoding correctly.
+# Cloudflare Pages — tell the browser the .br files are pre-compressed
+# Brotli, so it decompresses them on the fly. Required because the Unity
+# build was made without "Decompression Fallback".
 
-/Build/*.data.br
+/Build/*.br
   Content-Encoding: br
-  Content-Type: application/octet-stream
+  Cache-Control: public, max-age=31536000, immutable
 
 /Build/*.wasm.br
-  Content-Encoding: br
   Content-Type: application/wasm
 
 /Build/*.framework.js.br
-  Content-Encoding: br
   Content-Type: application/javascript
+
+/Build/*.data.br
+  Content-Type: application/octet-stream
 
 # Hashed Addressables bundles are immutable — cache forever.
 /StreamingAssets/aa/WebGL/*.bundle
   Cache-Control: public, max-age=31536000, immutable
+
+# Cross-origin isolation. Harmless for this same-origin Unity build,
+# and required if you ever enable WebGL multithreading / SharedArrayBuffer.
+/*
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: require-corp
