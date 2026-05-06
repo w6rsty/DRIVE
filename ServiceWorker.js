@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany-VehicleSim-0.1.0";
 const contentToCache = [
     "Build/drive-build.loader.js",
-    "Build/drive-build.framework.js.unityweb",
-    "Build/drive-build.data.unityweb",
-    "Build/drive-build.wasm.unityweb",
+    "Build/drive-build.framework.js.br",
+    "Build/drive-build.data.br",
+    "Build/drive-build.wasm.br",
     "TemplateData/style.css"
 
 ];
