@@ -4,11 +4,17 @@
     <type fullname="DRIVE.Gameplay.OffTrackDetector" preserve="all" />
     <type fullname="DRIVE.Gameplay.RaceStartController" preserve="all" />
     <type fullname="DRIVE.Gameplay.WrongWayDetector" preserve="all" />
-    <type fullname="DRIVE.Vehicle.Physics.ArcadeType" preserve="all" />
     <type fullname="DRIVE.Vehicle.Physics.CarInput" preserve="all" />
+    <type fullname="DRIVE.Vehicle.Physics.Engine" preserve="all" />
+    <type fullname="DRIVE.Vehicle.Physics.PacejkaTyre" preserve="all" />
     <type fullname="DRIVE.Vehicle.Physics.RemoteVehicleSmoother" preserve="all" />
+    <type fullname="DRIVE.Vehicle.Physics.Setups.CarPhysicsSetup" preserve="all" />
+    <type fullname="DRIVE.Vehicle.Physics.Setups.GearboxSetup" preserve="all" />
+    <type fullname="DRIVE.Vehicle.Physics.Setups.WheelAxleSetup" preserve="all" />
     <type fullname="DRIVE.Vehicle.Physics.SuspensionSystem" preserve="all" />
+    <type fullname="DRIVE.Vehicle.Physics.VehicleBodyVisual" preserve="all" />
     <type fullname="DRIVE.Vehicle.Physics.VehicleController" preserve="all" />
+    <type fullname="DRIVE.Vehicle.Physics.WheelAxle" preserve="all" />
     <type fullname="DRIVE.Vehicle.VehicleCameraRig" preserve="all" />
     <type fullname="DRIVE.Vehicle.VehicleNameplate" preserve="all" />
   </assembly>
